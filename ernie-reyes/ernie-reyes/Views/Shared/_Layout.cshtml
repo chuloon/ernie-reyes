@@ -3,13 +3,13 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <title>@ViewBag.Title - Ernie Reyes'</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
+    <div id="wcma-navbar" class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -17,33 +17,50 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand"><img src="~/Content/img/wcma.png" /></a>
+                <a class="navbar-brand"><img src="~/Content/img/wcma.png" width="150" /></a>
             </div>
             <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    <li>@Html.ActionLink("Class Schedule", "ClassSchedule", "Home")</li>
+                <ul class="nav navbar-nav main-nav">
+                    <li>@Html.ActionLink("HOME", "Index", "Home")</li>
+                    <li>@Html.ActionLink("CLASS SCHEDULE", "ClassSchedule", "Home")</li>
                     <li class="dropdown">
-                        <a class="dropdown-toggle" data-toggle="dropdown" href="javascript:void(0)">About
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="javascript:void(0)">ABOUT
                         <span class="caret"></span></a>
                         <ul class="dropdown-menu">
-                            <li>@Html.ActionLink("Instructors", "Instructors", "Home")</li>
+                            <li>@Html.ActionLink("INSTRUCTORS", "Instructors", "Home")</li>
                             <li>@Html.ActionLink("FAQ", "FAQ", "Home")</li>
-                            <li>@Html.ActionLink("KJN Greg Fears", "KJN", "Home")</li>
-                            <li>@Html.ActionLink("Program Info", "ProgramInfo", "Home")</li>
+                            <li>@Html.ActionLink("KJN GREG FEARS", "KJN", "Home")</li>
+                            <li>@Html.ActionLink("PROGRAM INFO", "ProgramInfo", "Home")</li>
                         </ul>
                     </li>
-                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                    <li>@Html.ActionLink("CONTACT", "Contact", "Home")</li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="javascript:void(0)" data-toggle="modal" data-target="#map">2544 Bethel Rd<br />Columbus, OH 43220<br />(614) 326-2872</a></li>
                 </ul>
             </div>
         </div>
     </div>
-    <div class="container body-content">
+    <div class="container body-content" style="margin-top: 175px;">
         @RenderBody()
         <hr />
         <footer>
             <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
         </footer>
+    </div>
+
+    <div class="modal fade" id="map" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">Ernie Reyes' Location</h4>
+                </div>
+                <div class="modal-body">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3053.4738525050698!2d-83.09069808438147!3d40.06484118488868!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88389286dc2b4809%3A0xd0a02075cddd55ad!2sErnie+Reyes&#39;+Midwest+Institute!5e0!3m2!1sen!2sus!4v1480980527467" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
     </div>
 
     @Scripts.Render("~/bundles/jquery")
