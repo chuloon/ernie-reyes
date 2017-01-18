@@ -52,3 +52,7 @@ textarea {
 #wcma-navbar .main-nav {
     margin-top: 125px;
 }
+
+.panel {
+    border-radius: 0px !important;
+}

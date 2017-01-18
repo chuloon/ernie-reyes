@@ -2284,7 +2284,9 @@
     <Content Include="Content\img\example\2.jpg" />
     <Content Include="Content\img\example\3.jpg" />
     <Content Include="Content\img\example\4.jpg" />
+    <Content Include="Content\img\example\fears.jpg" />
     <Content Include="Content\img\wcma.png" />
+    <Content Include="Content\stylesheets\index.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />

@@ -2,6 +2,10 @@
     ViewBag.Title = "Home";
 }
 
+@section AddToHead {
+    <link type="text/css" rel="stylesheet" href="~/Content/stylesheets/index.css" />
+}
+
 @*<div class="jumbotron">
     <h2 class="text-center" style="font-size: 2.5em">Welcome to Ernie Reyes'<br /> Midwest Martial Arts Association</h2>
     <p class="lead">Our school, located in Columbus, is a branch of the Ernie Reyes' World Martial Arts Organization, and offers a positive,energetic, and family-oriented atmosphere. We offer classes in Mixed Martial Arts and Kardio-Kickboxing, for male and female students of all ages, ranging from 4 years old to 60+ years young.  Classes are scheduled for various ages and belt levels in order to accommodate the need for differences in instructional styles between children and adults.</p>
@@ -51,7 +55,51 @@
     </a>
 </div>
 
-<div class="jumbotron">
+<div class="text-center">
+    <div class="get-started-btn bottom-shadow">
+        LEARN MORE ABOUT CLASSES
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-xs-12 col-md-4">
+        <div class="panel bottom-shadow">
+            <div class="panel-body">Email list container</div>
+        </div>
+    </div>
+    <div class="col-xs-12 col-md-4">
+        <div class="panel bottom-shadow">
+            <div class="panel-body">Class schedule container</div>
+        </div>
+    </div>
+    <div class="col-xs-12 col-md-4">
+        <div class="panel bottom-shadow">
+            <div class="panel-body">Image gallery container</div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-xs-12">
+        <div class="panel">
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-xs-4">
+                        <img src="~/Content/img/example/fears.jpg" width="100%" />
+                    </div>
+                    <div class="col-xs-8">
+                        <h1>Master Greg Fears</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tincidunt nisi sed dolor suscipit accumsan. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aenean consequat pellentesque augue eu volutpat. Suspendisse sed lacus sapien. Nunc commodo nisi vel mauris sollicitudin bibendum. Ut sed nulla lacus. Praesent justo odio, posuere sed tristique ac, consectetur laoreet mauris. Aenean posuere mi nec elementum placerat. Suspendisse pretium dui ligula, luctus mollis elit tristique nec. Aliquam arcu arcu, euismod sed scelerisque nec, facilisis id odio. Aliquam urna felis, convallis vitae auctor in, pharetra ut tellus. Aliquam interdum neque id libero hendrerit, ac facilisis ex finibus. Nullam non risus tellus. Aenean finibus libero feugiat arcu dapibus dapibus. Aenean maximus quam sit amet mauris auctor, id laoreet tellus sollicitudin.</p>
+                        <p>Morbi ut congue ipsum. Nunc rhoncus, neque et suscipit vestibulum, turpis est elementum tellus, nec iaculis urna velit nec dolor. Integer sodales luctus massa, eu tristique mi congue non. Nam in mi in dui tempus gravida. Nunc sit amet luctus purus. Proin in molestie justo. Sed at augue sem.</p>
+                        <p>Sed tincidunt erat leo, euismod vestibulum sem venenatis a. Sed at volutpat ex. Nunc lobortis ante sit amet fermentum condimentum. Maecenas tempus urna ut sapien rhoncus, ut feugiat nisl viverra. Suspendisse id mattis nisl. Duis vel metus nibh. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Proin et orci et eros mollis pulvinar laoreet quis tellus.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@*<div class="jumbotron">
     <div class="row text-center">
         <div class="col-md-4">
             <h2>PURPOSE</h2>
@@ -82,4 +130,4 @@
             <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
         </div>
     </div>
-</div>
+</div>*@
