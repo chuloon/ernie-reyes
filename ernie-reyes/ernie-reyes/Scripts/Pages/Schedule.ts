@@ -1,5 +1,12 @@
 ﻿declare var firebase: any;
 
+let scheduleData = ko.observable();
+
+firebase.database().ref('/schedule/').once('value').then((result) => {
+    debugger;
+    scheduleData(result.val());
+});
+
 let schedule = {
     "monday": {
         "4:00": {

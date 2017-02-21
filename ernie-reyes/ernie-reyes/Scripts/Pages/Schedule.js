@@ -1,3 +1,8 @@
+var scheduleData = ko.observable();
+firebase.database().ref('/schedule/').once('value').then(function (result) {
+    debugger;
+    scheduleData(result.val());
+});
 var schedule = {
     "monday": {
         "4:00": {
