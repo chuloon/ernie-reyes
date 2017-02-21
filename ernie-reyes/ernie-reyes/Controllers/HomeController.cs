@@ -26,5 +26,12 @@ namespace ernie_reyes.Controllers
 
             return View();
         }
+
+        public ActionResult Schedule()
+        {
+            ViewBag.Message = "Schedule";
+
+            return View();
+        }
     }
 }
