@@ -1,0 +1,25 @@
+﻿.get-started-btn {
+    color: #ffc300;
+    background-color: #222;
+    font-family: 'Sansman';
+    font-size: 2em;
+    letter-spacing: 5px;
+
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    cursor: pointer;
+}
+
+.get-started-btn:hover {
+    color: white;
+}
+
+.bottom-shadow {
+    -webkit-box-shadow: 0 8px 6px -6px #222;
+	   -moz-box-shadow: 0 8px 6px -6px #222;
+	        box-shadow: 0 8px 6px -6px #222;
+}

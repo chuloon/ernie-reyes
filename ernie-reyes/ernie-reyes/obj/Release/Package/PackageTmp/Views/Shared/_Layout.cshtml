@@ -7,8 +7,27 @@
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <script src="https://www.gstatic.com/firebasejs/3.6.8/firebase.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.4.1/knockout-min.js"></script>
+
+    @if (IsSectionDefined("AddToHead"))
+    {
+        @RenderSection("AddToHead", required: false)
+    }
 </head>
 <body>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyAo6rQFOL6fYBr_g7b44I2h8i58Sqi97Uo",
+            authDomain: "ernie-reyes.firebaseapp.com",
+            databaseURL: "https://ernie-reyes.firebaseio.com",
+            storageBucket: "ernie-reyes.appspot.com",
+            messagingSenderId: "777627339077"
+        };
+        firebase.initializeApp(config);
+    </script>
     <div id="wcma-navbar" class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
@@ -22,10 +41,12 @@
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav main-nav">
                     <li>@Html.ActionLink("HOME", "Index", "Home")</li>
-                    <li>@Html.ActionLink("CLASS SCHEDULE", "ClassSchedule", "Home")</li>
+                    <li>@Html.ActionLink("CLASS SCHEDULE", "Schedule", "Home")</li>
                     <li class="dropdown">
-                        <a class="dropdown-toggle" data-toggle="dropdown" href="javascript:void(0)">ABOUT
-                        <span class="caret"></span></a>
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="javascript:void(0)">
+                            ABOUT
+                            <span class="caret"></span>
+                        </a>
                         <ul class="dropdown-menu">
                             <li>@Html.ActionLink("INSTRUCTORS", "Instructors", "Home")</li>
                             <li>@Html.ActionLink("FAQ", "FAQ", "Home")</li>
@@ -45,7 +66,7 @@
         @RenderBody()
         <hr />
         <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+            <p>&copy; @DateTime.Now.Year - Ernie Reyes Midwest Martial Arts</p>
         </footer>
     </div>
 

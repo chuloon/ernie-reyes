@@ -2285,8 +2285,10 @@
     <Content Include="Content\img\example\3.jpg" />
     <Content Include="Content\img\example\4.jpg" />
     <Content Include="Content\img\example\fears.jpg" />
+    <Content Include="Content\img\index\fears-profile.JPG" />
     <Content Include="Content\img\wcma.png" />
     <Content Include="Content\stylesheets\index.css" />
+    <Content Include="Content\stylesheets\schedule.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />

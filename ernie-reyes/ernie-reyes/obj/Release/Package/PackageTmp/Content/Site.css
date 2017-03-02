@@ -52,3 +52,16 @@ textarea {
 #wcma-navbar .main-nav {
     margin-top: 125px;
 }
+
+.panel {
+    border-radius: 0px !important;
+}
+
+/* Bootstrap Overrides */
+
+.panel {
+    border-radius: 0px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+/* End Bootstrap Overrides */

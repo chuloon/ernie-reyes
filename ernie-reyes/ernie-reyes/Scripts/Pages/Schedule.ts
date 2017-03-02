@@ -1,11 +1,22 @@
-﻿declare var firebase: any;
+﻿ko.applyBindings(new scheduleViewModel());
 
-let scheduleData = ko.observable();
+function scheduleViewModel() {
+    this.addClassSchedule = () => {
+        firebase.database().ref('/schedule/').set(schedule);
+    }
+    this.dayArray = ["", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+    this.timeArray = ["4:00", "4:30", "5:00", "5:45", "6:30", "7:15", "8:00"];
+    this.scheduleData = ko.observable();
 
-firebase.database().ref('/schedule/').once('value').then((result) => {
-    debugger;
-    scheduleData(result.val());
-});
+    firebase.database().ref('/schedule/').once('value').then((result) => {
+        this.scheduleData(result.val());
+    });
+}
+
+
+
+declare var firebase: any;
+
 
 let schedule = {
     "monday": {
@@ -190,10 +201,3 @@ let schedule = {
     },
 };
 
-function scheduleViewModel() {
-    this.addClassSchedule = () => {
-        firebase.database().ref('/schedule/').set(schedule);
-    }
-}
-
-ko.applyBindings(new scheduleViewModel());
