@@ -26,6 +26,19 @@ namespace ernie_reyes
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
                       "~/Content/site.css"));
+
+            bundles.Add(new StyleBundle("~/Content/assets/styles").Include(
+                     "~/content/assets/css/core.css",
+                     "~/content/assets/css/components.css",
+                     "~/content/assets/css/colors.css"));
+
+            bundles.Add(new ScriptBundle("~/Content/assets/scripts").Include(
+                "~/content/assets/js/plugins/loaders/pace.min.js",
+                "~/content/assets/js/plugins/loaders/blockui.min.js",
+                "~/content/assets/js/plugins/forms/inputs/typeahead/handlebars.min.js",
+                "~/content/assets/js/plugins/forms/inputs/alpaca/alpaca.min.js",
+                "~/content/assets/js/plugsins/ui/ripple.min.js"
+                ));
         }
     }
 }

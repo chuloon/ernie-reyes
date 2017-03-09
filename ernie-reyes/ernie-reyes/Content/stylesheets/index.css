@@ -23,3 +23,9 @@
 	   -moz-box-shadow: 0 8px 6px -6px #222;
 	        box-shadow: 0 8px 6px -6px #222;
 }
+
+.email-button {
+    background-color: #ffc300;
+    color: black;
+    margin-top: 15px;
+}
