@@ -24,8 +24,20 @@
 	        box-shadow: 0 8px 6px -6px #222;
 }
 
-.email-button {
+.action-button {
     background-color: #ffc300;
     color: black;
     margin-top: 15px;
+}
+
+.navbar-right {
+    margin-left: 0px;
+}
+
+.first-class {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 15px;
+    font-size: 1.2em;
+    font-weight: bold;
 }

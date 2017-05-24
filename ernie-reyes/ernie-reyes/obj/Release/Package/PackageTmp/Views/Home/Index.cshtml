@@ -65,15 +65,20 @@
     <div class="col-xs-12 col-md-4">
         <div class="panel bottom-shadow">
             <div class="panel-body">
-                <h4>Join our mailing list to keep up to date with us!</h4>
+                <h3>STAY UPDATED!</h3>
                 <input id="email-textbox" type="text" class="alpaca-control form-control" placeholder="example@address.com" data-bind="value: $data.emailText" />
-                <button type="button" class="btn btn-primary email-button" data-bind="click: $data.mailingClick">Sign Up</button>
+                <button type="button" class="btn btn-primary action-button" data-bind="click: $data.mailingClick">Sign Up</button>
             </div>
         </div>
     </div>
     <div class="col-xs-12 col-md-4">
         <div class="panel bottom-shadow">
-            <div class="panel-body">Class schedule container</div>
+            <div class="panel-body">
+                <h3>FIRST CLASS TODAY: </h3>
+                <h6 class="first-class" data-bind="text: firstClassTime"></h6>
+                <h6 class="first-class" data-bind="text: firstClassTitle"></h6>
+                <button type="button" class="btn btn-primary action-button" data-bind="click: $data.scheduleClick">SEE ALL</button>
+            </div>
         </div>
     </div>
     <div class="col-xs-12 col-md-4">

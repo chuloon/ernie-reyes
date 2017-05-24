@@ -14,6 +14,8 @@
     <p class="lead">The owner and main instructor of Ernie Reyes' Midwest, Master Greg Fears, is a three time world champion and is profiled in the Tae Kwon Do Hall of Fame. He is a 7th Degree Black Belt and currently serves as an Advisory Member of Arnold Schwarzenegger's After-School All-Stars (ASAS) Columbus Board and oversees the ASAS martial arts program for the Columbus area.</p>
 </div>*@
 
+<img data-bind="attr: { src: imgPath }" />
+
 <div id="main-carousel" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">
         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -65,20 +67,28 @@
     <div class="col-xs-12 col-md-4">
         <div class="panel bottom-shadow">
             <div class="panel-body">
-                <h4>Join our mailing list to keep up to date with us!</h4>
+                <h3>STAY UPDATED!</h3>
                 <input id="email-textbox" type="text" class="alpaca-control form-control" placeholder="example@address.com" data-bind="value: $data.emailText" />
-                <button type="button" class="btn btn-primary email-button" data-bind="click: $data.mailingClick">Sign Up</button>
+                <button type="button" class="btn btn-primary action-button" data-bind="click: $data.mailingClick">Sign Up</button>
             </div>
         </div>
     </div>
     <div class="col-xs-12 col-md-4">
         <div class="panel bottom-shadow">
-            <div class="panel-body">Class schedule container</div>
+            <div class="panel-body">
+                <h3>FIRST CLASS TODAY: </h3>
+                <h6 class="first-class" data-bind="text: firstClassTime"></h6>
+                <h6 class="first-class" data-bind="text: firstClassTitle"></h6>
+                <button type="button" class="btn btn-primary action-button" data-bind="click: $data.scheduleClick">SEE ALL</button>
+            </div>
         </div>
     </div>
     <div class="col-xs-12 col-md-4">
-        <div class="panel bottom-shadow">
-            <div class="panel-body">Image gallery container</div>
+        <div class="bottom-shadow">
+            <div style="height: 175px; overflow: hidden">
+                <h3 class="gallery-title">Image Gallery</h3>
+                <a href="#"><img src="~/Content/img/index/gallery-thumb.jpg" /></a>
+            </div>
         </div>
     </div>
 </div>
