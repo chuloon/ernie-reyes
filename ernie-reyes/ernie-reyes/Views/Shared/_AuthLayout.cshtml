@@ -8,6 +8,8 @@
     @Scripts.Render("~/bundles/modernizr")
     @Styles.Render("~/Content/assets/styles")
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="~/Content/stylesheets/font-awesome.min.css">
+    <link href="~/Content/stylesheets/layout.css" rel="stylesheet" />
 
     <script src="https://www.gstatic.com/firebasejs/3.6.8/firebase.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.4.1/knockout-min.js"></script>
@@ -69,10 +71,6 @@
     </div>
     <div class="" style="margin-top: 175px;">
         @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - Ernie Reyes Midwest Martial Arts</p>
-        </footer>
     </div>
 
     <div class="modal fade" id="map" role="dialog">

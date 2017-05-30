@@ -2,5 +2,32 @@
     Layout = "~/Views/Shared/_AuthLayout.cshtml";
 }
 
+@section AddToHead {
+    <link type="text/css" rel="stylesheet" href="~/Content/stylesheets/admin/index.css" />
+}
+
+    <div class="col-xs-12 col-md-10 col-md-offset-1">
+        <div class="panel-group" id="accordion">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#main-gallery">
+                            Main Gallery
+                        </a>
+                    </h4>
+                </div>
+                <div id="main-gallery" class="panel-collapse collapse in">
+                    <div class="panel-body">
+                        <progress id="main-gallery-uploader" value="0" max="100" class="uploader">0%</progress>
+                        <input id="main-gallery-file-button" type="file" value="upload" />
+
+                        <!-- ko foreach: mainGalleryLinks -->
+                        <img class="col-xs-1" data-bind="attr: { src: $data }" />
+                        <!-- /ko -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 <script src="~/Scripts/Pages/Admin/Index.js"></script>
